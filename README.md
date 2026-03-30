@@ -1,5 +1,9 @@
 # Real-Time Disease Outbreak Detection using Apache Spark
 
+A scalable big data pipeline for real-time healthcare analytics and outbreak detection using Apache Spark.
+
+---
+
 ## Overview
 
 This project implements a scalable Big Data pipeline to detect disease outbreak patterns using real-time patient vitals, medical test results, clinical notes, and demographic data.
@@ -42,13 +46,14 @@ Healthcare systems generate massive structured and unstructured data daily. The 
 
 ## Pipeline Architecture
 
-1. Data Ingestion (Batch and Streaming)
-2. Data Cleaning and Preprocessing
-3. Data Integration using Spark joins
-4. NLP processing for clinical notes
-5. Feature extraction and transformation
-6. Aggregation by region and time
-7. Outbreak detection and alert generation
+The system follows a structured data pipeline:
+
+* **Data Ingestion:** Batch (CSV, JSON, Parquet) and streaming (real-time vitals)
+* **Data Processing:** Cleaning, transformation, and joins using Apache Spark
+* **NLP Layer:** Extract symptoms from clinical notes
+* **Aggregation:** Region-wise and time-based grouping
+* **Detection:** Identify abnormal patterns and outbreak signals
+* **Output:** Alerts, CSV reports, and visualizations
 
 ---
 
@@ -81,6 +86,8 @@ Healthcare systems generate massive structured and unstructured data daily. The 
 ---
 
 ## Results
+
+The system successfully detects outbreak patterns and healthcare stress using combined batch and streaming data analysis.
 
 ### Dataset Summary
 
@@ -123,13 +130,14 @@ Healthcare systems generate massive structured and unstructured data daily. The 
 
 ## Project Structure
 
-```id="clean123"
+```text
 big-data-project/
-│── PS1_EarlyOutbreakDetection.ipynb
-│── PS2_groupbased_risk.ipynb
-│── PS3_RegionLevelOutbreakVsLoad.ipynb
-│── PS4_HospitalAlertSystem.ipynb
-│── README.md
+│
+├── PS1_EarlyOutbreakDetection.ipynb
+├── PS2_groupbased_risk.ipynb
+├── PS3_RegionLevelOutbreakVsLoad.ipynb
+├── PS4_HospitalAlertSystem.ipynb
+├── README.md
 ```
 
 ---
@@ -138,24 +146,30 @@ big-data-project/
 
 1. Clone the repository
 
-```bash id="run1"
+```bash
 git clone https://github.com/93527Rupali38898/big-data-project.git
 cd big-data-project
 ```
 
 2. Install dependencies
 
-```bash id="run2"
+```bash
 pip install pyspark pandas matplotlib seaborn plotly
 ```
 
 3. Launch Jupyter Notebook
 
-```bash id="run3"
+```bash
 jupyter notebook
 ```
 
 4. Execute notebooks in sequence: PS1 → PS4
+
+---
+
+## Sample Output
+
+(Add a screenshot of your graphs or results here for better visualization)
 
 ---
 
